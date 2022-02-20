@@ -1,16 +1,15 @@
 # Analyzing King County Real Estate
 
--Chris, Tim, 'Timi
+-Student Names: Chris Helmerson, Tim Cleary, 'Timi Adejumo
 
 ## Overview
-
 
 We have been contracted by a building company, Flatiron Construction Co., newly located in King County, WA. They want to enter the housing market and are unsure of which features of a new house are most important when looking to build and sell. We have been asked to source relevant data and provide the needed information.
 
 ---
 
 ### **Business Understanding**
-At the onset, there are a lot of decisions a home builder must make. A home builder's dream is to make homes that tick all of the boxes on the buyer's checklist. However, the question a builder wants answered is exactly what the buyer wants in a home. Our client, Flatiron Construction Co. has given us the opportunity to answer that question as they foray into King County.  
+At the onset, there are a lot of decisions a home builder must make. A home builder's dream is to make homes that tick all of the boxes on the buyer's checklist. However, the question a builder wants answered is exactly what the buyer wants in a home. Our client, Flatiron Construction Co. has given us the opportunity to answer that question as they foray into King County.  Currently, builders are facing major challenges, including escalation of prices of and a shortage of building materials, and labor shortages. On the other hand, the demand for homes has not slowed down. This means builders, like never before, must make the most use of the resources available.
 
 ---
 
