@@ -19,20 +19,11 @@ We sourced our data majorly off the King County Housing sales dataset, which is 
 Capitol Impact Government Gateway website. The dataset is for house sales in King County, WA between the the years 2014 to 2015. The dataset is available in .csv
 format. 
 To analyse the data, we made use of the following Python libraries:
--Numpy v1.20.3
--Pandas 1.1.3
--Matplotlib 3.3.1
--Statsmodel 0.12.0
--Scipy 1.5.2, and 
--Seaborn 0.11.0
+-Numpy v1.20.3, Pandas 1.1.3, Matplotlib 3.3.1, Statsmodel 0.12.0, Scipy 1.5.2, and Seaborn 0.11.0.
 
 The following information pertaining to home sales is available readily on the datasets: 
--date and price of sale of the home
--location of the property (zipcode and longitudinal and latitudinal coordinates)
--size (in square ft) of each property
--age
--condition
--number of bathrooms and bedrooms
+date and price of sale of the home, location of the property (zipcode and longitudinal and latitudinal coordinates), size (in square ft) of each property, age, condition and number of bathrooms and bedrooms.
+
 
 
 ---
