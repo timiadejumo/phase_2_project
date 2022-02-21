@@ -44,8 +44,8 @@ Among all of the included features, bathrooms, bedrooms, sqft_living (size of th
 ​
 Our first model accounted for 51% of the total variance in price, as per our selected variables.
 ​
-{PICTURE OF BASIC TRAIN OLS}
-{PICTURE OF BASIC TEST OLS}
+![ ](Data/base_train.png)
+![ ](Data/base_test.png)
 ​
 This worked out pretty well, but we also want to run our model with the features that we engineered. In order to account for some untold information we created two features for our model. We binned our zipcodes into regions and sorted by them, and then also added an indicator whether a house is inside Seattle city limits or not. These allowed us to examine physical location as an variable in a more tangible way than latitude or longitude.
 
@@ -55,10 +55,10 @@ With this model, we had an R-squared value of 56%, which goes to show there was 
 ---
 
 ### **Regression Results**
+![ ](Data/adv_train.png)
 
 ![ ](Data/adv_test.png)
 
-![ ](Data/adv_test.png)
 
 
 ---
