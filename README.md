@@ -31,8 +31,8 @@ date and price of sale of the home, location of the property (zipcode and longit
 The King County Home sales dataset we worked with required cleaning in its raw state. It had 21 columns, and the 3 datatypes: integer, strings and floats. 
 Some of the columns were also categorical in nature. 
 Datatype conversion: To better work with some of the columns, we had to cast them to other datatypes, for instance: 'sqft-basement' from string to float, 'date' column from string to datetime format, etc.
-Missing Values: We had to deal with null values in our dataset. The only column with null values was the 'waterfront' column. Due to the relatively small number of null values we were able to make safe assumptions about filling in the missing information. 
-Categorical data: Next we looked to get some of our data into numerical categories using OneHotEncoding to work better (or at all) with our model. 
+Missing Values: We had to deal with null values in our dataset. Three columns had null values. Due to the relatively small number of null values we were able to apply modal imputation where needed to fill in the missing information. 
+Categorical data: Next we looked to get some of our data into numerical categories using OneHotEncoding and Ordinalencoding to work better (or at all) with our model. 
 Outliers: There was only a solitary case of outliers probably due to clerical errors. 
 Scaling: Before fitting the training data, we scaled the train and test data using the StandardScaler.
 
