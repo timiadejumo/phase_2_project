@@ -56,6 +56,11 @@ With this model, we had an R-squared value of 56%, which goes to show there was 
 
 ### **Regression Results**
 
+![ ](Data/adv_test.png)
+
+![ ](Data/adv_test.png)
+
+
 ---
 
 ### **Conclusion**
