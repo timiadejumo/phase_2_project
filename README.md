@@ -99,7 +99,7 @@ Based on our findings we recommend that you take a look at features like number 
 ### **Conclusion**
 In conclusion, after applying our model to the 2014 to 2015 King County Real Estate Sales Dataset, we have found that bathrooms, bedrooms, living area, grade and region are the most significant factors when determining the final sales price of a home with the most significant factor being living space.
 
-Sales prices in Seattle are different enough from the rest of the county to be considered a region of its own. We found that the Southern regions of Seattle and the rest of the county was significantly lower than that of the other regions, which may offer great return on investment as the population grows.
+Sales prices in Seattle are different enough from the rest of the county to be considered a region of its own. We found that the Southern regions of Seattle and the rest of the county were significantly lower than that of the other regions, which may offer great return on investment as the population grows.
 
 ---
 ### **Going Forward**
