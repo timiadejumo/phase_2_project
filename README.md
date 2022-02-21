@@ -14,7 +14,7 @@ At the onset, there are a lot of decisions a home builder must make. A home buil
 ---
 
 ### **Data Understanding and Analysis**
-We sourced our data majorly off the King County Housing sales dataset, which is widely and openly available on the Internet. We were also able to source some additional data from the 
+We sourced our data majorly off the King County Homes sales dataset, which is widely and openly available on the Internet. We were also able to source some additional data from the 
 Capitol Impact Government Gateway website. The dataset is for house sales in King County, WA between the the years 2014 to 2015. The dataset is available in .csv
 format. 
 To analyse the data, we made use of the following Python libraries:
@@ -28,6 +28,13 @@ date and price of sale of the home, location of the property (zipcode and longit
 ---
 
 ### **Data Preparation**
+The King County Home sales dataset we worked with required cleaning in its raw state. It had 21 columns, and the 3 datatypes: integer, strings and floats. 
+Some of the columns were also categorical in nature. 
+Datatype conversion: To better work with some of the columns, we had to cast them to other datatypes, for instance: 'sqft-basement' from string to float, 'date' column from string to datetime format, etc.
+Missing Values: We had to deal with null values in our dataset. The only column with null values was the 'waterfront' column. Due to the relatively small number of null values we were able to make safe assumptions about filling in the missing information. 
+Categorical data: Next we looked to get some of our data into numerical categories using OneHotEncoding to work better (or at all) with our model. 
+Outliers: There was only a solitary case of outliers probably due to clerical errors. 
+Scaling: Before fitting the training data, we scaled the train and test data using the StandardScaler.
 
 ---
 
