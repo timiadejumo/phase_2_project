@@ -79,6 +79,8 @@ With this model we had an R-squared value of 56% which does show improvement ove
 ---
 
 ### **Repository Structure**
+
+
 .
 ├── Data                                       <- Contains our dataframe as well as the photos used in this README
 ├── .gitignore                                 <- Ignore file to hide sensitive or unnecessary files from being involved
