@@ -28,44 +28,48 @@ date and price of sale of the home, location of the property (zipcode and longit
 
 ---
 
-### **Data Preparation**
+### **Data Preparation:**
 The King County Home sales dataset we worked with required cleaning in its raw state. It had 21 columns, and the 3 datatypes: integer, strings and floats. 
 Some of the columns were also categorical in nature. 
-**-Datatype conversion**:    To better work with some of the columns, we had to cast them to other datatypes, for instance: 'sqft-basement' from string to float, 'date' column from string to datetime format, etc.
-**-Missing Values**:    We had to deal with null values in our dataset. Three columns had null values. Due to the relatively small number of null values we were able to apply modal imputation where needed to fill in the missing information. 
-**-Categorical data**:    Next we looked to get some of our data into numerical categories using OneHotEncoding and Ordinalencoding to work better (or at all) with our model. 
-**-Outliers**:    There was only a solitary case of outliers probably due to clerical errors. 
-**-Scaling**:    Before fitting the training data, we scaled the train and test data using the StandardScaler.
+* **Datatype conversion:**
+    To better work with some of the columns, we had to cast them to other datatypes, for instance: 'sqft-basement' from string to float, 'date' column from string to datetime format, etc.
+* **Missing Values:**
+    We had to deal with null values in our dataset. Three columns had null values. Due to the relatively small number of null values we were able to apply modal imputation where     needed to fill in the missing information. 
+* **Categorical data:**
+     Next we looked to get some of our data into numerical categories using OneHotEncoding and Ordinalencoding to work better (or at all) with our model. 
+* **Outliers:**
+     There was only a solitary case of outliers probably due to clerical errors. 
+* **Scaling:**
+     Before fitting the training data, we scaled the train and test data using the StandardScaler.
 
 ---
 
-### ** Base Model Training**
+### ** Base Model**
 Among all of the included features, bathrooms, bedrooms, sqft_living (size of the living area), sqft_above(size of the above ground footage), and grade made the most sense to select for our stakeholder. They showed some level of multicollinearity with our price, and were also good choices when thinking about building a new home. The size of the house, where it is located, the ammenities etc. are all major players.
-​
-​
+
+
 Our first model accounted for 51% of the total variance in price, as per our selected variables.
-​
-### Base Model Training data
+
+### Base Model on our train data
 ![ ](Data/base_train.png)
 
-### Base Model Test Data
+### Base Model on our test data
 ![ ](Data/base_test.png)
-​
+
 This worked out pretty well, but we also want to run our model with the features that we engineered. In order to account for some untold information we created two features for our model. We binned our zipcodes into regions and sorted by them, and then also added an indicator whether a house is inside Seattle city limits or not. These allowed us to examine physical location as an variable in a more tangible way than latitude or longitude.
 
-With this model, we had an R-squared value of 56%, which goes to show there was an increase in the accuracy of our model.
-​
 
 ---
 
-### **Advanced Modelling**
+### **Advanced Modeling**
 
 ![ ](Data/adv_train.png)
-### Advanced Training Model
+### Advanced Model on our train data
 
 ![ ](Data/adv_test.png)
-### Advanced Testb
+### Advanced Model on our test data
 
+With this model we had an R-squared value of 56% which does show improvement over our previous model! This means that location and whether or not a house is inside Seattle is significant enough to pay attention to when building a new home. 
 
 ---
 
@@ -75,3 +79,9 @@ With this model, we had an R-squared value of 56%, which goes to show there was 
 ---
 
 ### **Repository Structure**
+├── Data                                       <- Contains our dataframe as well as the photos used in this README
+├── .gitignore                                 <- Ignore file to hide sensitive or unnecessary files from being involved
+├── README.md                                  <- This file! The summation of our presentation.
+├── Phase 2 Contract (Timi, Chris, Tim).docx   <- Our group's contract
+├── FINAL_NOTEBOOK.ipynb                       <- The final iteration of our notebook on this project
+└── presentation.pdf                           <- PDF of our slide deck for our presentation
