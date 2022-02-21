@@ -6,6 +6,7 @@
 
 We have been contracted by a building company, Flatiron Construction Co., newly located in King County, WA. They want to enter the housing market and are unsure of which features of a new house are most important when looking to build and sell. We have been asked to source relevant data and provide the needed information.
 
+
 ---
 
 ### **Business Understanding**
@@ -38,14 +39,16 @@ Some of the columns were also categorical in nature.
 
 ---
 
-### **Modeling**
+### ** Base Model Training**
 Among all of the included features, bathrooms, bedrooms, sqft_living (size of the living area), sqft_above(size of the above ground footage), and grade made the most sense to select for our stakeholder. They showed some level of multicollinearity with our price, and were also good choices when thinking about building a new home. The size of the house, where it is located, the ammenities etc. are all major players.
 ​
 ​
 Our first model accounted for 51% of the total variance in price, as per our selected variables.
 ​
+### Base Model Training data
 ![ ](Data/base_train.png)
 
+### Base Model Test Data
 ![ ](Data/base_test.png)
 ​
 This worked out pretty well, but we also want to run our model with the features that we engineered. In order to account for some untold information we created two features for our model. We binned our zipcodes into regions and sorted by them, and then also added an indicator whether a house is inside Seattle city limits or not. These allowed us to examine physical location as an variable in a more tangible way than latitude or longitude.
@@ -55,12 +58,13 @@ With this model, we had an R-squared value of 56%, which goes to show there was 
 
 ---
 
-### **Regression Results**
-![ ](Data/adv_train.png)
+### **Advanced Modelling**
 
+![ ](Data/adv_train.png)
+### Advanced Training Model
 
 ![ ](Data/adv_test.png)
-
+### Advanced Testb
 
 
 ---
