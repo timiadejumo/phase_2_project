@@ -70,7 +70,9 @@ This worked out pretty well, but we also want to run our model with the features
 
 ![ ](Data/adv_test.png)
 
-With our improved model shown above, we had an R-squared value of 56%. This is a significant improvement over our previous model! This means that location and whether or not a house is inside Seattle is important enough to pay attention to when building a new home. 
+With our improved model shown above, we had an R-squared value of 56%. This is a significant improvement over our previous model! This means that location and whether or not a house is inside Seattle is important enough to pay attention to when building a new home as is the region.
+
+![ ](Data/image.png)
 
 ---
 ### **Validation**
@@ -95,10 +97,11 @@ Based on our findings we recommend that you take a look at features like number 
 ---
 
 ### **Conclusion**
+In conclusion, after applying our model to the 2014 to 2015 King County Real Estate Sales Dataset, we have found that bathrooms, bedrooms, living area, grade and region are the most significant factors when determining the final sales price of a home with the most significant factor being living space.
 
+Sales prices in Seattle are differ enough from the rest of the county to be considered a region of its own. We found that the Southern regions of Seattle and the rest of the county was significantly lower than that of the other regions, which may offer great return on investment as the population grows.
 
 ---
-
 ### **Going Forward**
 Based on our current model we feel that there is tremendous room for growth. Given more time we would love to look at features like proximity to shopping centers, or even to the beach!
 
